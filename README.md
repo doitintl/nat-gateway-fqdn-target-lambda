@@ -18,7 +18,9 @@ Please review the [maximum amount of routes in the VPC route table](https://docs
 - Set the function timeout to 60 seconds. (the average runtime is 450ms)
 - Define the following Environment variables:
 route_table_id - the route table id. (starts with *rtb-*)
-endpoints_name_list - the FQDN you would like to resolve (for example: google.com)
+endpoints_name_list - the FQDN you would like to resolve (for example: google.com).
+For multiple endpoints, please use the comma sign between endpoints (for example: google.com,bing.com)
+
 nat_gw_id - that nat gateway id (starts with *nat-*)
 - Use the following IAM Policy:
 ```
