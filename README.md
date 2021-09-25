@@ -7,7 +7,7 @@ This is an AWS lambda function written in Python that allows you to resolve FQDN
 ## What is it for? 
 When working with NAT Gateway, you are charged $ 0.045 per gigabyte for traffic passing through the NAT Gateway (Ingress/Egress).
 
-In some cases, the use of NAT Gateway is only for a specific API. So instead of all the traffic going through the NAT Gateway, you can route only the traffic for that specific API provider, and save costs.
+In some cases, the use of NAT Gateway is only for a specific API. So instead of routing all the traffic through the NAT Gateway, you can route only the endpoint IP addresses (a specific API provider, for example) and save costs.
 
 ## Limitations
 Please review the [maximum amount of routes in the VPC route table](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html#vpc-limits-route-tables)
