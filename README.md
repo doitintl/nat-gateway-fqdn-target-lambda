@@ -49,7 +49,7 @@ nat_gw_id - that nat gateway id (starts with *nat-*)
 
 Important note:
 If you use a Geo based FQDN (GeoDNS) address like ALB/ELB/RDS/Redshift. Please run the function from the **same region** where the servers are located.
-If you use this script to resolver CloudFront addresses, you might need to run the script from each availibility zone with a dedicated route table, because CloudFront might Will return different addresses between availability zones.
+If you use this script to resolver CloudFront addresses, you might need to run the script from each availibility zone with a dedicated route table, because CloudFront might return different addresses per availability zones.
 
 Credits: 
 The script was written by Or Zaida in collaboration with Avi Keinan from DoiT IL office.
